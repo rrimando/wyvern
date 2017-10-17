@@ -1,0 +1,56 @@
+## YAML Template.
+--- 
+track:
+    attributes:
+        id: track_entity
+        is_entity: true
+        entity_name: track
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: track
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        track_album_id: 
+            attributes:
+                name: track_album_id
+                id: track_album_id
+                type: integer
+                placeholder: Track Album ID
+                disabled: true
+        track_artist_id: 
+            attributes:
+                name: track_artist_id
+                id: track_artist_id
+                type: integer
+                placeholder: Track Artist ID
+                disabled: true        
+        track_id: 
+            attributes:
+                primary_key: true
+                name: track_id
+                id: track_id
+                type: integer
+                placeholder: Track ID
+                disabled: true
+        track_title: 
+            attributes:
+                name: track_title
+                id: track_title
+                type: string
+                placeholder: Track Title
+                required: true
+        track_file:
+            attributes:
+                name: track_file
+                id: track_file
+                type: file
+                placeholder: Track File
+                required: true

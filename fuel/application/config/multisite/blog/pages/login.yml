@@ -1,0 +1,35 @@
+## YAML Template
+## Blog Template
+theme:
+page_title: Blog Demo
+body_id: login
+login_required: false
+is_admin: true
+data:
+    forms:
+        login_form
+page:  
+    css:
+    js:    
+    layout: main
+    
+    header:
+        partials:
+            large_spacer
+            
+    body:
+        partials:
+            
+            large_logo:
+            large_spacer:    
+            login_form:
+        
+    footer:
+        partials:
+            large_spacer:
+            clearfix:
+            copyright:
+                #todo make this dynamic for change of years
+                company: Wyvern.
+
+

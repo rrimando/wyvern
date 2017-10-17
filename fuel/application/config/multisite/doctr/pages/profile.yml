@@ -1,0 +1,20 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: default
+page_title: DoctR &raquo; Profile
+body_id: user_page
+login_required: true
+data:
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        
+    body:
+        partials:
+            user_sidebar
+        
+    footer:
+
+

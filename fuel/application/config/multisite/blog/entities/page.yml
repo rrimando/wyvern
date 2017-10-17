@@ -1,0 +1,107 @@
+## YAML Template.
+--- 
+page:
+    attributes:
+        id: page
+        is_entity: true
+        entity_name: page
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: page
+    submit:
+        label: Publish
+        id: publish
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        page id: 
+            attributes:
+                primary_key: true
+                name: page_id
+                id: page_id
+                type: integer
+                placeholder: Page ID
+                disabled: true
+                admin_hide: true
+        page title: 
+            attributes:
+                name: page_title
+                id: page_title
+                type: string
+                placeholder: Page Title
+        page date: 
+            attributes:
+                name: page_date
+                id: page_date
+                type: date
+                placeholder: Page Date        
+        page slug:
+            attributes:
+                name: page_slug
+                id: page_slug
+                type: string
+                placeholder: Page Slug
+        page layout:
+            attributes:
+                name: page_layout
+                id: page_layout
+                type: enumeration
+                enumeration_type: select
+                options: Default, 2 Column, 3 Column
+                placeholder: Page Layout
+        page image:
+            attributes:
+                name: page_image
+                id: page_image
+                type: file
+                placeholder: Page Image
+                show_thumb: false
+        page content:
+            attributes:
+                name: page_content
+                id: page_content
+                type: textarea
+                placeholder: Content
+        page content undo:
+            attributes:
+                name: page_content_undo
+                id: page_content_undo
+                type: textarea
+                placeholder: Content Undo
+                admin_hide: true
+        page order:
+            attributes:
+                name: page_order
+                id: page_order
+                type: integer
+                placeholder: Page Order        
+        page meta seo title:
+            attributes:
+                name: page_meta_seo_title
+                id: page_meta_seo_title
+                type: string
+                placeholder: SEO Title
+        page meta seo keywords:
+            attributes:
+                name: page_meta_seo_keywords
+                id: page_meta_seo_keywords
+                type: string
+                placeholder: SEO Keywords
+        page meta seo description:
+            attributes:
+                name: page_meta_seo_description
+                id: page_meta_seo_description
+                type: textarea
+                placeholder: SEO Description
+        page status:
+            attributes:
+                name: page_status
+                id: page_status
+                type: enumeration
+                enumeration_type: radio
+                Label: Status
+                options: Publish, Draft

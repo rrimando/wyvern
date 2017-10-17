@@ -1,0 +1,165 @@
+## YAML Template.
+---
+patient:
+    page_title: Patient
+    attributes:
+        id: patient
+        is_entity: true
+        entity_name: patient
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: patient
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    is_user: true
+    fields:
+        patient id: 
+            attributes:
+                primary_key: true
+                name: patient_id
+                id: patient_id
+                type: integer
+                placeholder: Patient ID
+                disabled: true
+        fuel user id:
+            attributes:
+                name: fuel_user_id
+                id: fuel_user_id
+                type: integer
+                placeholder: FUEL USER ID
+                disabled: true
+        email address:
+            attributes:
+                name: email_address
+                id: email_address
+                type: string
+                placeholder: Email
+        password:
+            attributes:
+                name: password
+                id: password
+                type: string
+                placeholder: Password
+        mobile number:
+            attributes:
+                name: mobile_number
+                id: mobile_number
+                type: string
+                placeholder: Mobile Number
+        phone number:
+            attributes:
+                name: phone_number
+                id: phone_number
+                type: string
+                placeholder: Phone Number
+        gender:
+            attributes:
+                name: gender
+                id: gender
+                type: enumeration
+                label: Gender
+                options: Male, Female
+        last name:
+            attributes:
+                name: last_name
+                id: last_name
+                type: string
+                label: 
+                placeholder: Last Name
+        first name:
+            attributes:
+                name: first_name
+                id: first_name
+                type: string
+                placeholder: First Name
+        middle name:
+            attributes:
+                name: middle_name
+                id: middle_name
+                type: string
+                placeholder: Middle Name
+        suffix:
+            attributes:
+                name: suffix
+                id: suffix
+                type: string
+                placeholder: Suffix
+        birthday:
+            attributes:
+                name: birthday
+                id: birthday
+                type: date
+                placeholder: Birthday
+        birth place region:
+            attributes:
+                name: birth_place_region
+                id: birth_place_region
+                type: string
+                placeholder: Birth Place Region
+        birth place city:
+            attributes:
+                name: birth_place_city
+                id: birth_place_city
+                type: string
+                placeholder: Birth Place City
+        civil status:
+            attributes:
+                name: civil_status
+                id: civil_status
+                type: string
+                placeholder: Civil Status
+        home address:
+            attributes:
+                name: home_address
+                id: home_address
+                type: string
+                placeholder: Home Address
+        region:
+            attributes:
+                name: region
+                id: region
+                type: string
+                placeholder: Region
+        city:
+            attributes:
+                name: city
+                id: city
+                type: string
+                placeholder: City
+        street number name:
+            attributes:
+                name: street_number_name
+                id: street_number_name
+                type: string
+                placeholder: Street Number / Name
+        area village subdivision:
+            attributes:
+                name: area_village_subdivision
+                id: area_village_subdivision
+                type: string
+                placeholder: Area / Village / Subdivision
+        health care provider:
+            attributes:
+                name: health_care_provider
+                id: health_care_provider
+                type: string
+                placeholder: Health Care Provider
+        verification code:
+            attributes:
+                name: verification_code
+                id: verification_code
+                type: string
+                placeholder: Verification Code
+        accepted terms:
+            attributes:
+                name: accepted_terms
+                id: accepted_terms
+                type: integer
+                placeholder: Accepted Terms

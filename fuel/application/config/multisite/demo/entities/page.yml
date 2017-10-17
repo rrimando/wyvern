@@ -1,0 +1,58 @@
+## YAML Template.
+--- 
+page:
+    attributes:
+        id: pages
+        is_entity: true
+        entity_name: page
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: page
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        page id: 
+            attributes:
+                primary_key: true
+                name: page_id
+                id: page_id
+                type: integer
+                placeholder: Page ID
+                disabled: true
+        page name: 
+            attributes:
+                name: page_name
+                id: page_name
+                type: string
+                placeholder: Page Name
+        page slug: 
+            attributes:
+                name: page_slug
+                id: page_slug
+                type: string
+                placeholder: Page Slug        
+        page meta summary: 
+            attributes:
+                name: page_meta_summary
+                id: page_meta_summary
+                type: textarea
+                placeholder: Page Meta Summary
+        page keywords: 
+            attributes:
+                name: page_keywords
+                id: page_keywords
+                type: textarea
+                placeholder: Page Keywords   
+        page content: 
+            attributes:
+                name: page_content
+                id: page_content
+                type: textarea
+                placeholder: Page Content

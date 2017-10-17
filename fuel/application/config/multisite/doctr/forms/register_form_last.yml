@@ -1,0 +1,96 @@
+## YAML Template.
+---
+form:
+    attributes:
+        id: login_form
+    ajax:
+        url: ajax/user/register
+    fields:
+        ## field_name: 
+            ## label
+            ## label_id
+            ## label_class
+            ## group_id
+            ## group_class
+            ## name
+            ## type
+            ## placeholder
+            ## required
+            ## email - for validation
+            ## number - for validation
+        civil_status:
+            attributes:
+                name: civil_status
+                id: civil_status
+                type: text
+                placeholder: Civil Status
+                required: true
+        home address: 
+            attributes:
+                type: header
+                text: Home Address
+        region: 
+            attributes:
+                name: region
+                id: region
+                type: text
+                placeholder: Region
+                required: true
+        city: 
+            attributes:
+                name: city
+                id: city
+                type: text
+                placeholder: City
+                required: true
+        street_number_name:
+            attributes:
+                name: street_number_name
+                id: birthday
+                type: text
+                placeholder: Street Number / Name
+                required: true
+        area_village_subdivision:
+            attributes:
+                name: area_village_subdivision
+                id: area_village_subdivision
+                type: text
+                placeholder: Area / Village / Subdivision
+                required: true
+        health_care_provider:
+            attributes:
+                name: health_care_provider
+                id: health_care_provider
+                type: text
+                placeholder: Healthcare Provider
+                required: true
+        registration_step:
+            attributes:
+                type: hidden
+                name: registration_step
+                id: registration_step
+                value: complete
+        entity:
+            attributes:
+                type: hidden
+                name: entity
+                id: entity
+                value: patient
+        next_step:
+            attributes:
+                type: hidden
+                name: next_step
+                id: next_step
+                value: register/verification
+        csrf_token:
+            attributes:
+                type: csrf
+                name: csrf_token
+        error-container: message
+    submit:
+        label: Next
+        id: next
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up

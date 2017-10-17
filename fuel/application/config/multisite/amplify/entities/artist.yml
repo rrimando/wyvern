@@ -1,0 +1,83 @@
+## YAML Template.
+--- 
+artist:
+    attributes:
+        id: artist_entity
+        is_entity: true
+        entity_name: artist
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: artist
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        artist_id: 
+            attributes:
+                primary_key: true
+                name: artist_id
+                id: artist_id
+                type: integer
+                placeholder: Artist ID
+                disabled: true
+        #Fuel User ID is a staple for system stability                
+        fuel user id:
+            attributes:
+                name: fuel_user_id
+                id: fuel_user_id
+                type: integer
+                placeholder: FUEL USER ID
+                disabled: true        
+        #Email Address is a staple for system stability        
+        email_address: 
+            attributes:
+                name: email_address
+                id: email_address
+                type: string
+                placeholder: Email / Username
+        password: 
+            attributes:
+                name: password
+                id: password
+                type: integer
+                placeholder: Password
+        artist_band_name:
+            attributes:
+                name: artist_band_name
+                id: artist_band_name
+                type: string
+                placeholder: Artist / Band Name
+        # This should be artist genre ID        
+        artist_genre:
+            attributes:
+                name: artist_genre
+                id: artist_genre
+                type: enumeration
+                label: Genre
+                options: Rock, Blues, Raggae, Jazz, Electonic, Pop
+        artist_tags:
+            attributes:
+                name: artist_tags
+                id: artist_tags
+                type: string
+                label:
+                placeholder: Genre Tags
+        artist_url:
+            attributes:
+                name: artist_url
+                id: artist_url
+                type: string
+                label: Your URL
+                placeholder: URL
+                
+                
+                
+                
+                
+                

@@ -1,0 +1,25 @@
+## YAML Template.
+## Were using the default for LenovoPH
+theme: default
+page_title: Amplify &raquo; Home
+body_id: amplify-home
+login_required: false
+data:
+page:  
+    css:
+    js:    
+    layout: main
+    
+    header:
+        
+    body:
+        
+        
+    footer:
+        partials:
+            bare_navigation:
+            copyright:
+                #todo make this dynamic for change of years
+                company: Amplify PH.
+
+

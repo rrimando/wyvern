@@ -1,0 +1,92 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: redwater
+page_title: Redwater &raquo; About
+body_id:
+login_required: false
+data:
+    custom_entity_view:
+        entity: service
+        fields:
+            service name: 
+                attributes:
+                    id: service_name
+                    name: service_name
+                    display: services
+                    label: Service
+            service description: 
+                attributes:
+                    id: service_description
+                    name: service_description
+                    display: services
+                    label: Description         
+            service_file: 
+                attributes:
+                    name: service_file
+                    id: service_file
+                    display: services
+                    label: Service Image
+        filters:
+        count: 2
+page_slug: about    
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        partials:
+            custom_nav:
+                partials:
+                    nav_social_links:
+                    contact_no:
+                    open_div:
+                        id: page-wrap
+                    large_logo:
+                    bare_navigation:
+                
+    body:
+        partials:
+            page_text_content:
+            horizontal_separator:
+            
+            bottom_content:
+                partials:
+                    left:
+                        header:
+                            text: Our <span>Services</span> Include
+                        horizontal_separator:        
+                        custom_entity_view:
+                        button:    
+                            class: pull-right
+                            id: services-view-more    
+                            label: View More...
+                            url: services
+                    right:
+                        header:
+                            text: <span>Contact</span> Us
+                        horizontal_separator:    
+                        contact_box:
+                        button:
+                            id: write-review
+                            class: 
+                            label: Write Us A Review
+                            url: reviews
+                        block:
+                            partials:
+                                button:
+                                    id: view-gallery
+                                    class: 
+                                    label: View Our Gallery
+                                    url: gallery    
+                    block:
+                        partials:
+                            clearfix:
+                            large_spacer:
+                            horizontal_separator:            
+                                
+            close_div:
+            
+    footer:
+        partials:
+            bare_navigation:
+        

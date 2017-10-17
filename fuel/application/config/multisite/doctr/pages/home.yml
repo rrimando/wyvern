@@ -1,0 +1,21 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: default
+page_title: DoctR &raquo; Home
+body_id: 
+login_required: true    
+data:
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        
+    body:
+        partials:
+            large_logo
+            create_a_new_account
+            social_login
+            redirect_to_login_page
+    footer:
+        

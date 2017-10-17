@@ -1,0 +1,46 @@
+## YAML Template.
+--- 
+service:
+    attributes:
+        id: service
+        is_entity: true
+        entity_name: service
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: service
+    submit:
+        label: Upload
+        id: upload
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        service id: 
+            attributes:
+                primary_key: true
+                name: service_id
+                id: service_id
+                type: integer
+                placeholder: Service ID
+                disabled: true
+        service name: 
+            attributes:
+                name: service_name
+                id: service_name
+                type: string
+                placeholder: Service Name
+        service description:         
+            attributes:
+                name: service_description
+                id: service_description
+                type: textarea
+                placeholder: Service Description
+        service file: 
+            attributes:
+                name: service_file
+                id: service_file
+                type: file
+                placeholder: File 

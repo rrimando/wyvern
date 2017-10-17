@@ -1,0 +1,40 @@
+## YAML Template.
+--- 
+image:
+    attributes:
+        id: image
+        is_entity: true
+        entity_name: image
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: image
+    submit:
+        label: Upload
+        id: upload
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        image id: 
+            attributes:
+                primary_key: true
+                name: image_id
+                id: image_id
+                type: integer
+                placeholder: Image ID
+                disabled: true
+        image title: 
+            attributes:
+                name: image_title
+                id: image_title
+                type: string
+                placeholder: Image Title
+        file: 
+            attributes:
+                name: file
+                id: file
+                type: file
+                placeholder: File 

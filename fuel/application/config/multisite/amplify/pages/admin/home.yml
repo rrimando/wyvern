@@ -1,0 +1,27 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: default
+page_title: Lenovo Admin &raquo; Home
+body_id:
+login_required: true
+is_admin: true
+data:
+page_slug: home    
+page:
+    css:
+    js:    
+    layout: admin
+    header:
+        partials:
+            custom_nav:
+                partials:
+                    open_div:
+                        id: page-wrap
+                    large_logo:
+                    admin/navigation:
+                
+    body:
+        partials:
+            
+    footer:
+        

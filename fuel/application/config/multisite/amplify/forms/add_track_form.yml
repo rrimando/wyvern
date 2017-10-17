@@ -1,0 +1,106 @@
+## YAML Template.
+---
+form:
+    attributes:
+        id: amplify_add_track_form
+        is_entity: true
+        entity_name: track
+    ajax:
+        url: ajax/entity/create
+    fields:
+        ## field_name: 
+            ## label
+            ## label_id
+            ## label_class
+            ## group_id
+            ## group_class
+            ## name
+            ## type
+            ## placeholder
+            ## required
+            ## email - for validation
+            ## number - for validation
+        upload_queue:
+            attributes:
+                type: partial
+                partial: upload_queue    
+        tracks:        
+            attributes:
+                name: tracks
+                id: tracks
+                type: multiple_inputs
+                label: Tracks
+                label_class: 
+                class: 
+                required: true
+                fields: 
+                    track_album_id:
+                        attributes:
+                            label: 
+                            name: track_album_id
+                            id: track_album_id
+                            type: hidden
+                            placeholder: Track ID
+                            disabled: true
+                    track_artist_id:
+                        attributes:
+                            name: track_artist_id
+                            id: track_artist_id
+                            type: hidden
+                            placeholder: Artist ID
+                            disabled: trues
+                    track_title: 
+                        attributes:
+                            name: track_title
+                            id: track_title
+                            type: string
+                            placeholder: Track Title
+                            required: true
+                    track_file:
+                        attributes:
+                            label:
+                            name: track_file
+                            id: track_file
+                            type: file
+                            placeholder: Track File
+                            class: track_file_input
+                            remove_uploader: true
+                            required: true
+                    multiple entity:
+                        attributes:
+                            name: multiple_entity
+                            id: multiple_entity
+                            type: hidden
+                            value: tracks
+                            remove_uploader: false
+                            placeholder:
+                            class:
+                            required: false
+                    binding field:
+                        attributes:
+                            name: track_album_id
+                            id: track_album_id
+                            type: hidden
+                            value: 
+                            placeholder:
+                            class:
+                            required: false
+        csrf_token:
+            attributes:
+                class:
+                type: csrf
+                name: csrf_token 
+        entity:
+            attributes:
+                type: hidden
+                name: entity
+                id: entity
+                value: track          
+        error-container: message
+    submit:
+        label: Add
+        id: add
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up

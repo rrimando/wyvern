@@ -1,0 +1,133 @@
+## YAML Template.
+--- 
+site_settings:
+    attributes:
+        id: site_settings
+        is_entity: true
+        entity_name: site_settings
+        is_single_value: true
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: site_settings
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        site settings id: 
+            attributes:
+                primary_key: true
+                name: site_settings_id
+                id: site_settings_id
+                type: integer
+                placeholder: Site ID
+                disabled: true
+                admin_hide: true
+        site settings name: 
+            attributes:
+                name: site_settings_name
+                id: site_settings_name
+                type: string
+                placeholder: Site Name
+        site settings url: 
+            attributes:
+                name: site_settings_url
+                id: site_settings_url
+                type: string
+                placeholder: Site URL
+        site settings logo:
+            attributes:
+                name: site_settings_logo
+                id: site_settings_logo
+                type: file
+                label: Site Logo
+                placeholder: Site Logo
+        site settings address:
+            attributes:
+                name: site_settings_address
+                id: site_settings_address
+                type: textarea
+                label: 
+                placeholder: Address        
+        site settings email:
+            attributes:
+                name: site_settings_email
+                id: site_settings_email
+                type: text
+                label: 
+                placeholder: Contact Email
+        site settings number:
+            attributes:
+                name: site_settings_number
+                id: site_settings_number
+                type: text
+                label: 
+                placeholder: Contact Number
+        site settings username:
+            attributes:
+                name: site_settings_username
+                id: site_settings_username
+                type: string
+                placeholder: Admin Username 
+        site settings password:
+            attributes:
+                name: site_settings_password
+                id: site_settings_password
+                type: password
+                placeholder: Admin Password
+        site settings custom entities:
+            attributes:
+                name: site_settings_custom_entities
+                id: site_settings_custom_entities
+                type: enumeration
+                enumeration_type: radio
+                options: Enable, Disable
+                label: Custom Entities
+        site settings reports:
+            attributes:
+                name: site_settings_reports
+                id: site_settings_reports
+                type: enumeration
+                enumeration_type: radio
+                options: Enable, Disable
+                label: Reports
+        site settings carousel:
+            attributes:
+                name: site_settings_carousel
+                id: site_settings_carousel
+                type: enumeration
+                enumeration_type: radio
+                options: Enable, Disable
+                label: Enable Carousel        
+        site settings contact:
+            attributes:
+                name: site_setting_contact
+                id: site_settings_contact
+                type: enumeration
+                enumeration_type: radio
+                options: Enable, Disable
+                label: Contact Form
+        site settings reviews:
+            attributes:
+                name: site_setting_reviews
+                id: site_setting_reviews
+                type: enumeration
+                enumeration_type: radio
+                options: Enable, Disable
+                label: Reviews        
+        site settings theme:
+            attributes:
+                name: site_settings_theme
+                id: site_settings_theme
+                type: enumeration
+                enumeration_type: select
+                options: Default, Reis, Pole
+                label: Theme
+                
+                
+                

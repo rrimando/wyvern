@@ -1,0 +1,33 @@
+## YAML Template
+## Blog Template
+theme: default
+page_title: Blog &raquo; Home
+body_id: home
+login_required: false
+is_admin: false
+data:
+    forms:
+        contact_form
+        contestant_form
+page:  
+    css:
+    js:    
+    layout: main
+    header:
+        partials:
+            blog/frontend/header:
+            
+    body:
+        partials:
+            blog/frontend/sidebar:
+            carousel:
+                id: blog-carousel
+                class: carousel-fade
+                caption_class: hidden 
+                data: carousel
+                items:
+            blog/frontend/home:
+            
+    footer:
+        partials:
+            blog/frontend/footer:

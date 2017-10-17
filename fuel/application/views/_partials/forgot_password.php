@@ -1,0 +1,1 @@
+<a href="<?php echo base_url(); ?>user/forgot_password" class="forgot-password-link">Forgot Password?</a>

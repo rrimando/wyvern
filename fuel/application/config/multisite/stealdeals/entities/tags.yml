@@ -1,0 +1,45 @@
+## YAML Template.
+--- 
+tags:
+    attributes:
+        id: tags
+        is_entity: true
+        entity_name: tags
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: tags
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        tag id: 
+            attributes:
+                primary_key: true
+                name: tag_id
+                id: tag_id
+                type: integer
+                placeholder: Tag ID
+        tag name: 
+            attributes:
+                name: tag_name
+                id: tag_name
+                type: string
+                placeholder: Tag
+        tag slug:
+            attributes:
+                name: tag_slug
+                id: tag_slug
+                type: string
+                placeholder: Slug
+        tag notes:
+            attributes:
+                name: tag_notes
+                id: tag_notes
+                type: textarea
+                placeholder: Notes

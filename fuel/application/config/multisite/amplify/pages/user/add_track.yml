@@ -1,0 +1,30 @@
+## YAML Template.
+## Were using the default for LenovoPH
+theme: default
+page_title: Amplify &raquo; Add Track
+body_id: amplify-user
+login_required: false
+data:
+    forms:
+        add_track_form
+page:  
+    css:
+    js:    
+    layout: main
+    
+    header:
+        
+    body:
+        partials:
+            custom/amplify/add_trach: 
+                partials:
+                    add_track_form:
+        
+    footer:
+        partials:
+            bare_navigation:
+            copyright:
+                #todo make this dynamic for change of years
+                company: Amplify PH.
+
+

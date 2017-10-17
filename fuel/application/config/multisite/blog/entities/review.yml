@@ -1,0 +1,68 @@
+## YAML Template.
+--- 
+review:
+    attributes:
+        id: review
+        is_entity: true
+        entity_name: review
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: review
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        review id: 
+            attributes:
+                primary_key: true
+                name: review_id
+                id: review_id
+                type: integer
+                placeholder: Review ID
+                disabled: true
+        review approved: 
+            attributes:
+                name: review_approved
+                id: review_approved
+                type: enumeration
+                enumeration_type: radio
+                options: Approve, Disapprove
+                label: Approval
+        reviewer first name: 
+            attributes:
+                name: reviewer_first_name
+                id: reviewer_first_name
+                type: string
+                placeholder: First Name
+                label:
+        reviewer last name: 
+            attributes:
+                name: reviewer_last_name
+                id: reviewer_last_name
+                type: string
+                placeholder: Name
+                label:            
+        reviewer email: 
+            attributes:
+                name: reviewer_email
+                id: reviewer_email
+                type: string
+                placeholder: Email        
+        reviewer phone: 
+            attributes:
+                name: reviewer_phone
+                id: reviewer_phone
+                type: string
+                placeholder: Phone         
+        review content: 
+            attributes:
+                name: review_content
+                id: review_content
+                type: textarea
+                placeholder: Review

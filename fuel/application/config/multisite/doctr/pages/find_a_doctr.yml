@@ -1,0 +1,24 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: default
+page_title: DoctR &raquo; Find A Doctor
+body_id: user_page
+login_required: true
+data:
+    ## Forms should be the same name
+    forms: 
+        advanced_search_form
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        
+    body:
+        partials:
+            user_sidebar:
+            search_main:
+                    
+    footer:
+
+

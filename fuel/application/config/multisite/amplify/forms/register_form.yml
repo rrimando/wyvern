@@ -1,0 +1,59 @@
+## YAML Template.
+---
+form:
+    attributes:
+        id: amplify_signup_form
+    ajax:
+        url: ajax/user/register
+        success: register/last
+    fields:
+        #this is a staple for system stability        
+        email_address: 
+            attributes:
+                name: email_address
+                id: email_address
+                type: string
+                class:
+                placeholder: Email / Username
+        password: 
+            attributes:
+                name: password
+                id: password
+                type: password
+                placeholder: Password
+        artist_band_name:
+            attributes:
+                name: artist_band_name
+                id: artist_band_name
+                type: string    
+                placeholder: Artist / Band Name
+        registration_step:
+            attributes:
+                type: hidden
+                name: registration_step
+                id: registration_step
+                value: create
+        next_step:
+            attributes:
+                type: hidden
+                name: next_step
+                id: next_step
+                value: register/last
+        entity:
+            attributes:
+                type: hidden
+                name: entity
+                id: entity
+                value: artist
+        csrf_token:
+            attributes:
+                type: csrf
+                name: csrf_token
+        error-container: message
+    submit:
+        label: Sign Up
+        id: next
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up

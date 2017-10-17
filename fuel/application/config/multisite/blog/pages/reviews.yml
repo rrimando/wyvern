@@ -1,0 +1,77 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: redwater
+page_title: Redwater &raquo; Sevices
+body_id:
+login_required: false
+data:
+    
+    custom_entity_view:
+        entity: review
+        fields:
+            reviewer first name: 
+                attributes:
+                    id: reviewer_first_name
+                    name: reviewer_first_name
+                    display: quote
+                    label: First Name
+            reviewer last name: 
+                attributes:
+                    id: reviewer_last_name
+                    name: reviewer_last_name
+                    display: quote
+                    label: Last Name         
+            review_content: 
+                attributes:
+                    name: review_content
+                    id: review_content
+                    display: quote
+                    label: Review
+        filters:        
+            review_approved: approve
+        
+    forms:
+        review_form
+page_slug: reviews
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        partials:
+            custom_nav:
+                partials:
+                    nav_social_links:
+                    contact_no:
+                    open_div:
+                        id: page-wrap
+                    large_logo:
+                    bare_navigation:
+                
+    body:
+        partials:
+            header:
+                text: Read Reviews From Past Clients
+            custom_entity_view:
+            block:
+                partials:
+                    horizontal_separator:        
+            page_text_content:
+            review_form:
+            horizontal_separator:
+            external_image_buttons:
+                items:
+                    item-1:
+                        img: http://www.bbb.org/hawaii/content/images/global/cbbb-badge-horz.png
+                        url: http://www.bbb.org/hawaii/business-reviews/contractors-general/redwater-construction-llc-in-kailua-kona-hi-1007720/
+            
+           
+            horizontal_separator:
+            large_spacer:
+            clearfix:
+            close_div:
+            
+    footer:
+        partials:
+            bare_navigation:
+        

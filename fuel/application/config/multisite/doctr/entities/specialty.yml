@@ -1,0 +1,35 @@
+## YAML Template.
+---
+specialty:
+    page_title: Specialty
+    attributes:
+        id: specialty
+        is_entity: true
+        entity_name: specialty
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: specialty
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        specialty id:
+            attributes:
+                primary_key: true
+                name: specialty_id
+                id: specialty_id
+                type: integer
+                placeholder: Specialty ID
+                disabled: true
+        specialty name:
+            attributes:
+                name: specialty_name
+                id: specialty_name
+                placeholder: Specialty Name
+                type: string

@@ -1,0 +1,46 @@
+## YAML Template.
+--- 
+project:
+    attributes:
+        id: project
+        is_entity: true
+        entity_name: project
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: project
+    submit:
+        label: Upload
+        id: upload
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        project id: 
+            attributes:
+                primary_key: true
+                name: project_id
+                id: project_id
+                type: integer
+                placeholder: Project ID
+                disabled: true
+        project name: 
+            attributes:
+                name: project_name
+                id: project_name
+                type: string
+                placeholder: Project Name
+        project description:         
+            attributes:
+                name: project_description
+                id: project_description
+                type: textarea
+                placeholder: Project Description
+        project file: 
+            attributes:
+                name: project_file
+                id: project_file
+                type: file
+                placeholder: File 

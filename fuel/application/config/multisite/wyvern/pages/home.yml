@@ -1,0 +1,17 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: default
+page_title: Home
+body_id:
+data:
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        
+    body:
+        
+    footer:
+
+

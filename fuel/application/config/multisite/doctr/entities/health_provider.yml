@@ -1,0 +1,47 @@
+## YAML Template.
+---
+health_provider: 
+    page_title: Health Provider
+    attributes:
+        id: health_provider_entity
+        is_entity: true
+        entity_name: health_provider
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: doctor
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        health provider id: 
+            attributes:
+                primary_key: true
+                name: health_provider_id
+                id: health_provider_id
+                type: integer
+                placeholder: Health Provider ID
+                disabled: true
+        name:
+            attributes:
+                name: name
+                id: name
+                type: string
+                placeholder: Name
+        slug: 
+            attributes:
+                name: slug
+                id: slug
+                type: string
+                placeholder: Slug
+        description:
+            attributes:
+                name: description
+                id: description
+                type: textarea
+                placeholder: Description

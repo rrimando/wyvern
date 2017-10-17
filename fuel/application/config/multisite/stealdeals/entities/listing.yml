@@ -1,0 +1,164 @@
+## YAML Template.
+--- 
+listing:
+    attributes:
+        id: listing
+        is_entity: true
+        entity_name: listing
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: store
+    submit:
+        label: Save
+        id: Save
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        listing id: 
+            attributes:
+                primary_key: true
+                name: listing_id
+                id: listing_id
+                type: integer
+                placeholder: Listing ID
+                disabled: true
+        product id: 
+            attributes:
+                name: product_id
+                id: product_id
+                type: integer
+                placeholder: Product ID        
+        listing views: 
+            attributes: 
+                name: listing_views
+                id: listing_views
+                type: string
+                placeholder: Listing Views
+        listing title: 
+            attributes: 
+                name: listing_title
+                id: listing_title
+                type: string
+                placeholder: Listing Title
+                required: true
+        listing tags: 
+            attributes: 
+                name: listing_tags
+                id: listing_tags
+                type: string
+                placeholder: Listing Tags
+        listing date: 
+            attributes: 
+                name: listing_date
+                id: listing_date
+                type: date
+                placeholder: Listing Date
+                required: true
+        listing expirty date: 
+            attributes: 
+                name: listing_expiry_date
+                id: listing_expiry_date
+                type: date
+                placeholder: Listing Expiry Date
+        listing store id:
+            attributes: 
+                name: listing_store_id
+                id: listing_store_id
+                type: integer
+                placeholder: Store ID
+                required: true
+        listing condition:        
+            attributes: 
+                name: listing_condition
+                id: listing_condition
+                type: enumeration
+                options: Brand New, Second Hand, Working Condition
+                placeholder: Condition
+                required: true
+        listing stock:
+            attributes: 
+                name: listing_stock
+                id: listing_stock
+                type: number
+                placeholder: Stock
+        listing stock update:
+            attributes: 
+                name: listing_stock_update
+                id: listing_stock_update
+                type: date
+                placeholder: Stock Update
+        listing product url:
+            attributes: 
+                name: listing_product_url
+                id: listing_product_url
+                type: string
+                placeholder: Listing URL
+                required: true        
+        listing region:
+            attributes: 
+                name: listing_region
+                id: listing_region
+                type: string
+                placeholder: Region
+        listing city:
+            attributes: 
+                name: listing_city
+                id: listing_city
+                type: string
+                placeholder: City
+        listing address:
+            attributes: 
+                name: listing_address
+                id: listing_address
+                type: textarea
+                placeholder: Address
+        listing contact number:
+            attributes: 
+                name: listing_contact_number
+                id: listing_contact_number
+                type: string
+                placeholder: Number
+        listing contact person:
+            attributes: 
+                name: listing_contact_number
+                id: listing_contact_number
+                type: string
+                placeholder: Contact Person
+        listing price:
+            attributes: 
+                name: listing_price
+                id: listing_price
+                type: string
+                placeholder: Price
+        listing description:
+            attributes: 
+                name: listing_description
+                id: listing_description
+                type: textarea
+                placeholder: Description
+        listing shipping methods:
+            attributes: 
+                name: listing_shipping_methods
+                id: listing_shipping_methods
+                type: textarea
+                placeholder: Shipping Methods
+        listing payment methods:
+            attributes: 
+                name: listing_payment_methods
+                id: listing_payment_methods
+                type: textarea
+                placeholder: Payment Methods
+        listing image:
+            attributes: 
+                name: listing_image
+                id: listing_image
+                type: file
+                placeholder: Image
+         
+    
+
+        

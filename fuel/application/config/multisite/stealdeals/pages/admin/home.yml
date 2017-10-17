@@ -1,0 +1,26 @@
+## YAML Template.
+theme: default
+page_title: Steal Deals
+body_id:
+login_required: true
+is_admin: true
+data:
+page_slug: home    
+page:
+    css:
+    js:    
+    layout: admin
+    header:
+        partials:
+            custom_nav:
+                partials:
+                    open_div:
+                        id: page-wrap
+                    large_logo:
+                    admin/navigation:
+                
+    body:
+        partials:
+            
+    footer:
+        

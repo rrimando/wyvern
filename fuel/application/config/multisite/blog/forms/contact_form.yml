@@ -1,0 +1,73 @@
+    ## YAML Template.
+---
+form:
+    attributes:
+        id: contact_form
+        is_entity: false
+        entity_name:
+    ajax:
+        url: contact/send
+        success: page/contact_success
+    fields:
+        ## field_name: 
+            ## label
+            ## label_id
+            ## label_class
+            ## group_id
+            ## group_class
+            ## name
+            ## type
+            ## placeholder
+            ## required
+            ## email - for validation
+            ## number - for validation
+        messenger first name:
+            attributes:
+                name: messenger_first_name
+                id: messenger_first_name
+                type: text
+                placeholder: First Name
+                required: true
+        messenger last name:
+            attributes:
+                name: messenger_last_name
+                id: messenger_last_name
+                type: text
+                placeholder: Last Name
+                required: true  
+        messenger email:
+            attributes:
+                name: messenger_email
+                id: messenger_email
+                type: email
+                placeholder: Email
+                required: true
+        messenger mobile number:
+            attributes:
+                name: messenger_mobile_number
+                id: messenger_mobile_number
+                type: number
+                placeholder: Number       
+                required: true        
+        message:
+            attributes:
+                name: message
+                id: message
+                type: textarea
+                placeholder: Message 
+                label: 
+                required: true
+        error-container: message        
+        success:
+            attributes:
+                name: success
+                id: success
+                type: hidden
+                value: page/contact_success        
+    submit:
+        label: Send Message
+        id: send_message
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up

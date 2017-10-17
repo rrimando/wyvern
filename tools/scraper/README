@@ -1,0 +1,24 @@
+Installing Python In Ubuntu
+http://askubuntu.com/questions/101591/how-do-i-install-python-2-7-2-on-ubuntu
+
+sudo apt-get install libxml2
+sudo apt-get install libxslt1.1
+sudo apt-get install libxml2-dev
+sudo apt-get install libxslt1-dev
+sudo apt-get install python-libxml2
+sudo apt-get install python-libxslt1
+sudo apt-get install python-dev
+sudo apt-get install python-setuptools
+
+Cython
+easy_install cython
+
+python setup.py build_ext
+
+easy_install pip
+pip install lxml
+
+Upgrade to 2.7.8
+
+Installing Pyenv
+https://github.com/yyuu/pyenv#installation

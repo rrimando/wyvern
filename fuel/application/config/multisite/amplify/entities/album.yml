@@ -1,0 +1,91 @@
+## YAML Template.
+--- 
+album:
+    attributes:
+        id: album_entity
+        is_entity: true
+        entity_name: album
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: album
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        album_artist_id: 
+            attributes:
+                name: album_artist_id
+                id: album_artist_id
+                type: integer
+                placeholder: Album Artist ID
+                disabled: true
+        album_id: 
+            attributes:
+                primary_key: true
+                name: album_id
+                id: album_id
+                type: integer
+                placeholder: Album ID
+                disabled: true
+        album_name: 
+            attributes:
+                name: album_name
+                id: album_name
+                type: string
+                placeholder: Album Name
+                required: true
+        album_art: 
+            attributes:
+                name: album_art
+                id: album_art
+                type: file
+                placeholder: Album Art
+                required: true
+        album_artist: 
+            attributes:
+                name: album_artist
+                id: album_artist
+                type: string
+                placeholder: Album Artist
+                note: for compilations, labels, etc.
+        album_description: 
+            attributes:
+                name: album_description
+                id: album_description
+                type: textarea
+                placeholder: About The Album
+        album_credits: 
+            attributes:
+                name: album_credits
+                id: album_credits
+                type: textarea
+                placeholder: Album Credits        
+        album_tags: 
+            attributes:
+                name: album_tags
+                id: album_tags
+                type: string
+                placeholder: Album Tags
+        album_status: 
+            attributes:
+                name: album_status
+                id: album_status
+                type: enumeration
+                enumeration_type: radio
+                options: Draft, Published
+                placeholder: Status       
+                
+        
+        
+                
+                
+                
+                
+                
+                

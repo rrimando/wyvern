@@ -1,0 +1,59 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: redwater
+page_title: Redwater &raquo; Gallery
+body_id:
+login_required: false
+data:
+    custom_entity_view:
+        entity: gallery
+        fields:
+            gallery caption title: 
+                attributes:
+                    id: gallery_caption_title
+                    name: gallery_caption_title
+                    display: gallery
+                    label: Title
+            gallery caption: 
+                attributes:
+                    id: gallery_caption
+                    name: gallery_caption
+                    display: gallery
+                    label: Description         
+            gallery_file: 
+                attributes:
+                    name: gallery_file
+                    id: gallery_file
+                    display: gallery
+                    label: Image
+        filters:            
+page_slug: gallery    
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        partials:
+            custom_nav:
+                partials:
+                    nav_social_links:
+                    contact_no:
+                    open_div:
+                        id: page-wrap
+                    large_logo:
+                    bare_navigation:
+                
+    body:
+        partials:
+            page_text_content:
+            horizontal_separator:
+            custom_entity_view:
+            clearfix:    
+            large_spacer:            
+            block: 
+                partials:
+                    horizontal_separator:
+    footer:
+        partials:
+            bare_navigation:
+        

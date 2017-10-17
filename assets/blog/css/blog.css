@@ -1,0 +1,112 @@
+/* WYVERN BLOG CSS  */
+/* v1 2015 */
+/* rohanrimando@pixeljump.com.ph */
+
+/* Frontend */
+#home .container .row {
+    margin-top: 50px;
+}
+/* End Frontend */
+
+footer {
+    /* The following works only if the content/page has a minimum height */
+    position: fixed; 
+    bottom: 0;
+
+    width: 100%;
+
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+
+    height: 30px;
+    line-height: 30px;
+
+    font-size: .8em;
+
+    text-align: center;
+
+    padding: 5px 0 30px 0;
+}
+
+/* Admin Section */
+/* Sidemenu */
+#side-menu {
+    text-align: left;
+}
+
+#side-menu .nav-third-level a {
+    font-size: .8em;
+}
+/* End Sidemenu */
+/* Login Page */
+#login {
+    min-height: 600px
+}
+
+#login .large-logo {
+    margin-top: 100px;
+}
+
+#login #login-form {
+    margin: 100px auto 100px auto;
+    max-width: 280px;
+}
+/* End Login Page */
+/* Dashboard */
+#admin {
+    text-align: left;
+}
+
+#admin .container {
+    width: 100%;
+    text-align: left;
+}
+
+#page-wrapper {
+}
+
+.inner-wrap .service {
+    width: 675px;
+    margin: 0 auto;
+}
+
+.inner-wrap h4 {
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.inner-wrap img {
+    width: 38%;
+    float: left;
+    width: 250px;
+    padding: 10px 10px 10px 10px;
+}
+
+.inner-wrap .content {
+    margin-top: 50px;
+    width: 60%;
+    float: left;
+    color: #fff;
+}
+
+#admin .container .row {
+    text-align: left;
+}
+/* End Dashboard */
+/* Admin Forms */
+form {
+    min-height: 500px;
+}
+
+form .file_container img{
+    max-height: 100px;
+}
+
+form#post,
+form#page,
+form#site_settings {
+    margin-bottom: 100px;
+}
+/* End Admin Forms */
+/* End Admin Section */

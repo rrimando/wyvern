@@ -1,0 +1,20 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: default
+page_title: DoctR &raquo; Continue Your Registration
+body_id:
+data:
+    ## Forms should be the same name
+    forms: 
+        register_form_verification
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        
+    body:
+        partials:
+            large_logo
+            register_form_verification
+    footer:

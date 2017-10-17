@@ -1,0 +1,45 @@
+## YAML Template.
+---
+form:
+    attributes:
+        id: search-form
+    ajax:
+        url: ajax/fetch_content/listing
+        success: response
+        success_action: load_search_results
+    fields:
+        ## field_name: 
+            ## label
+            ## label_id
+            ## label_class
+            ## group_id
+            ## group_class
+            ## name
+            ## type
+            ## placeholder
+            ## required
+            ## email - for validation
+            ## number - for validation
+        search:
+            attributes:
+                name: search
+                id: search
+                type: text
+                placeholder: What are you looking for...
+                required: true
+        logo:
+            attributes:
+                type: partial
+                partial: large_logo
+        csrf_token:
+            attributes:
+                type: csrf
+                name: csrf_token        
+        error-container: message
+    submit:
+        label: Search
+        id: search
+        class: hidden
+        span_class: hidden
+        data_controls:
+            data-style: slide-up

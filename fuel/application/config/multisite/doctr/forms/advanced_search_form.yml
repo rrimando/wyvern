@@ -1,0 +1,70 @@
+form:
+    attributes:
+        id: search_for_a_doctor
+        class: transparent,search-form
+        is_entity: true
+        entity_name: doctor
+    ajax:
+        url: ajax/entity/filter
+    submit:
+        label: Search
+        id: search
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        doctor specialty id:
+            attributes:
+                id: doctor_specialty_id
+                type: enumeration
+                label: Specialty
+                options:
+                    attributes:
+                        entity: specialty
+                        value: specialty_id
+                        label: specialty_name
+        doctor health provider id:
+            attributes:
+                id: doctor_health_provider_id
+                type: enumeration
+                label: Medical Health Provider
+                options:
+                    attributes:
+                        entity: health_provider
+                        value: health_provider_id
+                        label: name
+        clinic address:
+            attributes:
+                type: text
+                label: Location
+        is ajax:
+            attributes:
+                id: is_ajax
+                type: hidden
+                value: true
+        #table render variables                
+        exclude:
+            attributes:
+                id: exclude
+                type: hidden
+                value: _of_birth,octor_id,user_id,provider_id,cialty_id
+        entity:
+            attributes:
+                id: entity
+                type: hidden
+                value: doctor
+        form name:
+            attributes:
+                id: form_name
+                type: hidden
+                value: advanced_search_form
+        error-container: message
+    results:
+        type: table
+        attributes:
+            class: transparnt
+            custom_actions:
+                View:
+                    type: url
+                    target: entity

@@ -1,0 +1,159 @@
+    ## YAML Template.
+---
+form:
+    attributes:
+        id: contestant_form
+    ajax:
+        url: ajax/user/register
+        success: home
+    fields:
+        ## field_name: 
+            ## label
+            ## label_id
+            ## label_class
+            ## group_id
+            ## group_class
+            ## name
+            ## type
+            ## placeholder
+            ## required
+            ## email - for validation
+            ## number - for validation
+        #POLE Contestant Data
+        user_id:
+            attributes:
+                name: user_id
+                class: user_id
+                id: user_id
+                type: hidden
+                value:
+                    source: session
+                    target: user_id   
+        contestant_category: 
+            attributes:
+                name: contestant_category
+                id: contestant_category
+                type: enumeration
+                label: Category
+                placeholder: 
+                group_class: categories
+                enumeration_type: radio
+                options: amateur, intermediate, professionals
+        contestant_video: 
+            attributes:
+                name: contestant_video
+                id: contestant_video
+                type: video
+                label: Video
+                allowed_types: mp4,avi,og3,mpeg,mkv
+                group_class: 
+                placeholder: 
+                value:
+        contestant_photo:
+            attributes:
+                name: contestant_photo
+                id: contestant_photo
+                type: file
+                label: Profile Image
+                placeholder: Profile Image
+                value:
+        contestant_country:
+            attributes:
+                name: contestant_country
+                id: contestant_country
+                type: string
+                label: Country
+                placeholder: Country
+                value:
+        contestant_pole_studio_attending:
+            attributes:
+                name: contestant_pole_studio_attending
+                id: contestant_pole_studio_attending
+                type: string
+                label: Studio
+                placeholder: Studio 
+                value:
+        contestant_years_pole_dancing:
+            attributes:
+                name: contestant_years_pole_dancing
+                id: contestant_years_pole_dancing
+                type: integer
+                label: How Many Years Have You Been Pole Dancing
+                placeholder: How Many Years Have You Been Pole Dancing
+                value:
+        contestant_background_history:
+            attributes:
+                name: contestant_background_history
+                id: contestant_background_history
+                type: textarea
+                label: Background History
+                placeholder: Background History        
+                value:
+        contestant_instagram:
+            attributes:
+                name: contestant_instagram
+                id: contestant_instagram
+                type: string
+                label: Instagram
+                placeholder: Instagram
+                value:
+        contestant_facebook:
+            attributes:
+                name: contestant_facebook
+                id: contestant_facebook
+                type: string
+                label: Facebook
+                placeholder: Facebook
+                value:
+        contestant_twitter:
+            attributes:
+                name: contestant_twitter
+                id: contestant_twitter
+                type: string
+                label: Twitter
+                placeholder: Twitter
+                value:
+        contestant_profile: 
+            attributes:
+                name: contestant_profile
+                id: contestant_profile
+                type: textarea
+                label: Profile
+                placeholder:     
+                value:    
+        error-container: message            
+        contestant_signup_complete: 
+            attributes:
+                name: contestant_signup_complete
+                id: contestant_signup_complete
+                type: hidden
+                value: 1
+                label: Status
+                placeholder:  
+        registration_step:
+            attributes:
+                type: hidden
+                name: registration_step
+                id: registration_step
+                value: complete
+        next_step:
+            attributes:
+                type: hidden
+                name: next_step
+                id: next_step
+                value: user/home                
+        entity:
+            attributes:
+                type: hidden
+                name: entity
+                id: entity
+                value: user              
+    submit:
+        label: Update Profile
+        id: update-profile
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+                
+        

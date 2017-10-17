@@ -1,0 +1,85 @@
+## YAML Template.
+---
+doctor: 
+    attributes:
+        id: doctor_entity
+        is_entity: true
+        entity_name: doctor
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: doctor
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    is_user: true
+    fields:
+        doctor id:
+            attributes:
+                primary_key: true
+                name: doctor_id
+                id: doctor_id
+                type: integer
+                placeholder: Doctor ID
+                disabled: true
+        fuel user id:
+            attributes:
+                name: fuel_user_id
+                id: fuel_user_id
+                type: integer
+                placeholder: FUEL CMS User ID
+                disabled: true
+        #do not use the same field ids it is cause some conlicts
+        doctor health provider id:
+            attributes:
+                name: doctor_health_provider_id
+                id: doctor_health_provider_id
+                type: enumeration
+                label: Medical Health Provider
+                options:
+                    attributes:
+                        entity: health_provider
+                        value: health_provider_id
+                        label: name
+        name:
+            attributes:
+                name: name
+                id: name
+                type: string
+                # BUG FIX FOR LABEL
+                label: 
+                placeholder: Name
+        date of birth:
+            attributes:
+                name: date_of_birth
+                id: date_of_birth
+                type: date
+                placeholder: Date of Birth
+        listed address:
+            attributes:
+                name: listed_address
+                id: listed_address
+                type: textarea
+                placeholder: Listed Address
+        clinic address:
+            attributes:
+                name: clinic_address
+                id: clinic_address
+                type: textarea
+                placeholder: Clinic Address
+        doctor specialty id: 
+            attributes:
+                name: doctor_specialty_id
+                id: doctor_specialty_id
+                type: enumeration
+                label: Specialty
+                options:
+                    attributes:
+                        entity: specialty
+                        value: specialty_id
+                        label: specialty_name

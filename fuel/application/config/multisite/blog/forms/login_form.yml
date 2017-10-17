@@ -1,0 +1,47 @@
+## YAML Template.
+---
+form:
+    attributes:
+        id: login-form
+    ajax:
+        url: ajax/auth/login
+        success: admin
+    fields:
+        ## field_name: 
+            ## label
+            ## label_id
+            ## label_class
+            ## group_id
+            ## group_class
+            ## name
+            ## type
+            ## placeholder
+            ## required
+            ## email - for validation
+            ## number - for validation
+        username:
+            attributes:
+                name: username
+                id: username
+                type: text
+                placeholder: Username / Email
+                required: true
+        password:
+            attributes:
+                name: password
+                id: password
+                type: password
+                placeholder: Password
+                required: true
+        csrf_token:
+            attributes:
+                type: csrf
+                name: csrf_token        
+        error-container: message
+    submit:
+        label: Login
+        id: login
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up

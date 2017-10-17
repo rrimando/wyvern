@@ -1,0 +1,34 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: default
+page_title: DoctR &raquo; User &raquo; Home
+body_id:
+data:
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        
+    body:
+        partials:
+            carousel:
+                id: user_landing_page
+                class: whole-page
+                items:
+                    item-1:
+                        header_caption: Lorem Ipsum Dolor
+                        caption: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s <a href='../page/find_a_doctr' class='btn btn-primary btn-lg pull-right' role='button'>Click To Find A Doctor</a>.
+                        img: jogger.jpg
+                    item-2:
+                        header_caption: Lorem Ipsum Dolor
+                        caption: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </div><a href='../page/find_a_doctr' class='btn btn-primary btn-lg pull-right' role='button'>Click To Find A Doctor</a>.
+                        img: kids.png
+                    item-3:
+                        header_caption: Lorem Ipsum Dolor
+                        caption: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s <a href='../page/find_a_doctr' class='btn btn-primary btn-lg pull-right' role='button'>Click To Find A Doctor</a>.
+                        img: doctor.jpg
+        
+    footer:
+
+

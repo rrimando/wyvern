@@ -1,0 +1,132 @@
+## YAML Template.
+--- 
+store:
+    attributes:
+        id: store
+        is_entity: true
+        entity_name: store
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: store
+    submit:
+        label: Save
+        id: Save
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        store id: 
+            attributes:
+                primary_key: true
+                name: store_id
+                id: store_id
+                type: integer
+                placeholder: Store ID
+                disabled: true
+        #Fuel User ID is a staple for system stability                
+        fuel user id:
+            attributes:
+                name: fuel_user_id
+                id: fuel_user_id
+                type: integer
+                placeholder: FUEL USER ID
+                disabled: true        
+        #Email Address is a staple for system stability        
+        email_address: 
+            attributes:
+                name: email_address
+                id: email_address
+                type: string
+                placeholder: Email / Username
+        password: 
+            attributes:
+                name: password
+                id: password
+                type: integer
+                placeholder: Password        
+        store type:
+            attributes: 
+                name: store_type
+                id: store_type
+                type: enumeration
+                options: private_seller, large_online_store, specialized_online_store, stealdeals_store
+                placeholder: Type
+                required: true
+        store name:        
+            attributes: 
+                name: store_name
+                id: store_name
+                type: string
+                options: 
+                placeholder: Store Name
+                required: true
+        store url:
+            attributes: 
+                name: store_url
+                id: store_url
+                type: string
+                placeholder: URL
+                required: true
+        store contact person:
+            attributes: 
+                name: store_contact_person
+                id: store_contact_person
+                type: string
+                placeholder: Contact Person
+                required: true
+        store contact number:
+            attributes: 
+                name: store_contact_number
+                id: store_contact_number
+                type: string
+                placeholder: Contact Number
+                required: true        
+        store facebook url:
+            attributes: 
+                name: store_facebook_url
+                id: store_facebook_url
+                type: string
+                placeholder: Facebook URL
+        store twitter url:
+            attributes: 
+                name: store_twitter_url
+                id: store_twitter_url
+                type: string
+                placeholder: Twitter URL
+        store description:
+            attributes: 
+                name: store_description
+                id: store_description
+                type: textarea
+                placeholder: Description
+        store tags:
+            attributes: 
+                name: store_tags
+                id: store_tags
+                type: string
+                placeholder: Tags
+        store keywords:
+            attributes: 
+                name: store_keywords
+                id: store_keywords
+                type: string
+                placeholder: Keywords
+        store meta data:
+            attributes: 
+                name: store_meta_data
+                id: store_keywords
+                type: string
+                placeholder: Keywords
+        store logo:
+            attributes: 
+                name: store_logo
+                id: store_logo
+                type: file
+                placeholder: Logo
+         
+    
+
+        

@@ -1,0 +1,44 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: default
+page_title: DoctR &raquo; Find A Doctor
+body_id: user_page
+data:
+    ## Forms should be the same name
+    custom_entity_view:
+        doctor id:
+            attributes:
+                id: booking_doctor_id
+                display: default
+                label: Doctor
+                get_from: doctor
+                get_with: booking_doctor_id
+                # where to pull from
+                get_by: doctor_id
+                # what to get
+                get: name
+        date:
+            attributes:
+                id: date
+                display: default
+                label: Date       
+    forms:        
+        book_doctor_form
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        
+    body:
+        partials:
+            user_sidebar:
+            open_div:
+                id: booking-content
+            large_logo:
+            header: 
+                text: Your Appointments
+            custom_entity_view:
+            close_div:
+                    
+    footer:

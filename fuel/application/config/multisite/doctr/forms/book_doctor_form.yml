@@ -1,0 +1,63 @@
+## YAML Template.
+---
+form:
+    attributes:
+        id: booking_form
+        is_entity: true
+        entity_name: booking
+    ajax:
+        url: ajax/entity/create
+        success: view/booking/all/my_appointments
+    fields:
+        ## field_name: 
+            ## label
+            ## label_id
+            ## label_class
+            ## group_id
+            ## group_class
+            ## name
+            ## type
+            ## placeholder
+            ## required
+            ## email - for validation
+            ## number - for validation
+        book doctr: 
+            attributes:
+                type: header
+                text: Book this DoctR   
+        booking doctor id:
+            attributes:
+                name: booking_doctor_id
+                id: booking_doctor_id
+                type: hidden 
+                value: 
+                    source: view
+                    target: target_id
+        booking patient id: 
+            attributes:
+                name: booking_patient_id
+                id: booking_patient_id
+                type: hidden
+                value:
+                    source: session
+                    target: patient_id
+        date:
+            attributes:
+                name: date
+                id: date
+                type: date
+                placeholder: Date and Time
+        entity:
+            attributes:
+                type: hidden
+                name: entity
+                id: entity
+                value: booking            
+        error-container: message
+    submit:
+        label: Book DocTR
+        id: book_doctor
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up

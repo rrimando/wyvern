@@ -1,0 +1,54 @@
+## YAML Template.
+--- 
+booking:
+    attributes:
+        id: booking_entity
+        is_entity: true
+        entity_name: booking
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: booking
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        booking_id: 
+            attributes:
+                primary_key: true
+                name: booking_id
+                id: booking_id
+                type: integer
+                placeholder: Booking ID
+                disabled: true
+        booking_doctor_id: 
+            attributes:
+                name: booking_doctor_id
+                id: booking_doctor_id
+                type: enumeration
+                label: Doctor
+                options:
+                    attributes:
+                        entity: doctor
+                        value: doctor_id
+                        label: name
+        booking_patient_id: 
+            attributes:
+                name: booking_patient_id
+                id: booking_patient_id
+                type: integer
+                ## stupid value reset have to do this or it will inherit last label
+                label: 
+                placeholder: Patient ID
+                disabled: true
+        date:
+            attributes:
+                name: date
+                id: date
+                type: date
+                placeholder: Appointment Date

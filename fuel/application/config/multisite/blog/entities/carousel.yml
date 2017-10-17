@@ -1,0 +1,34 @@
+## YAML Template.
+--- 
+carousel:
+    attributes:
+        id: carousel
+        is_entity: true
+        entity_name: carousel
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: carousel
+    submit:
+        label: Save
+        id: Save
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        carousel id: 
+            attributes:
+                primary_key: true
+                name: carousel_id
+                id: carousel_id
+                type: integer
+                placeholder: Carousel Image ID
+                disabled: true
+        carousel file: 
+            attributes:
+                name: carousel_file
+                id: carousel_file
+                type: file
+                placeholder: Gallery Image 

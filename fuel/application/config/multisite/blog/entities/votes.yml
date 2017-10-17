@@ -1,0 +1,74 @@
+## YAML Template.
+--- 
+votes:
+    attributes:
+        id: votes
+        is_entity: true
+        entity_name: votes
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: votes
+    submit:
+        label: Save 
+        id: Save
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        vote id: 
+            attributes:
+                primary_key: true
+                name: vote_id
+                id: vote_id
+                type: integer
+                placeholder: Vote ID
+                admin_hide: true
+                disabled: true
+        vote date:        
+            attributes:
+                name: vote_date
+                id: vote_date
+                type: hidden
+                placeholder: Date
+                value: now
+        user id:
+            attributes:
+                name: user_id
+                id: user_id
+                type: integer
+                placeholder: Voter ID
+                disabled: true
+        dancer id:
+            attributes:
+                name: dancer_id
+                id: dancer_id
+                type: integer
+                placeholder: Dancer ID
+                disabled: true        
+        performance rating:
+            attributes:
+                name: performance_rating
+                id: performance_rating
+                type: integer
+                placeholder: Performance
+        costume rating:
+            attributes:
+                name: costume_rating
+                id: costume_rating
+                type: integer
+                placeholder: Costume
+        pole moves rating:
+            attributes:
+                name: pole_moves_rating
+                id: pole_moves_rating
+                type: integer
+                placeholder: Pole Moves
+        fluidity rating:
+            attributes:
+                name: fluidity_rating
+                id: fluidity_rating
+                type: integer
+                placeholder: Fluidity

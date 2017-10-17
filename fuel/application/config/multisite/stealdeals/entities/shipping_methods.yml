@@ -1,0 +1,67 @@
+## YAML Template.
+--- 
+shipping_methods:
+    attributes:
+        id: shipping_methods
+        is_entity: true
+        entity_name: shipping_methods
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: shipping_methods
+    submit:
+        label: Save
+        id: Save
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        shipping method id: 
+            attributes:
+                primary_key: true
+                name: shipping_method_id
+                id: shipping_method_id
+                type: integer
+                placeholder: Shipping Method ID
+                disabled: true
+        shipping method type:
+            attributes: 
+                name: shipping_method_type
+                id: shipping_method_type
+                type: string
+                placeholder: Type
+                required: true
+        shipping method name:        
+            attributes: 
+                name: shipping_method_name
+                id: shipping_method_name
+                type: string
+                options: 
+                placeholder: Shipping Name
+                required: true
+        shipping method url:        
+            attributes: 
+                name: shipping_method_url
+                id: shipping_method_url
+                type: string
+                options: 
+                placeholder: Shipping Method URL
+                required: true  
+        shipping method length:        
+            attributes: 
+                name: shipping_method_length
+                id: shipping_method_length
+                type: number
+                options: 
+                placeholder: Shipping Method Length(In Days)
+                required: true                
+        shipping method description:        
+            attributes: 
+                name: shipping_method_description
+                id: shipping_method_description
+                type: textarea
+                placeholder: Shipping Method Description
+                required: true
+        

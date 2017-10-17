@@ -1,0 +1,179 @@
+## YAML Template.
+--- 
+user:
+    attributes:
+        id: user_entity
+        is_entity: true
+        entity_name: user
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: user
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        user_id: 
+            attributes:
+                primary_key: true
+                name: user_id
+                id: user_id
+                type: integer
+                placeholder: User ID
+                admin_hide: true
+                disabled: true
+        #Fuel User ID is a staple for system stability                
+        fuel user id:
+            attributes:
+                name: fuel_user_id
+                id: fuel_user_id
+                type: integer
+                placeholder: FUEL USER ID
+                disabled: true        
+                admin_hide: true
+        #Email Address is a staple for system stability  
+        fullname:
+            attributes:
+                name: fullname
+                id: fullname
+                type: string
+                placeholder: Fullname
+        email_address: 
+            attributes:
+                name: email_address
+                id: email_address
+                type: string
+                placeholder: Email / Username
+        password: 
+            attributes:
+                name: password
+                id: password
+                type: integer
+                admin_hide: true
+                placeholder: Password
+        user_name:
+            attributes:
+                name: user_name
+                id: user_name
+                type: string
+                placeholder: Name
+        #Facebook
+        facebook_link:
+            attributes:
+                name: facebook_link
+                id: facebook_link
+                type: string
+                placeholder: Facebook Link
+                admin_hide: true
+        facebook_access_token:
+            attributes:
+                name: facebook_access_token
+                id: facebook_access_token
+                type: string
+                placeholder: Facebook Access Token
+                admin_hide: true
+        usertype: 
+            attributes:
+                name: usertype
+                id: usertype
+                type: string
+                placeholder: Usertype
+                value: 
+        #POLE Contestant Data
+        contestant_category: 
+            attributes:
+                name: contestant_category
+                id: contestant_category
+                type: enumeration
+                label: Category
+                placeholder: Category
+                enumeration_type: radio
+                options: amateur, intermediate, professionals
+        contestant_video: 
+            attributes:
+                name: contestant_video
+                id: contestant_video
+                type: file
+                label: Video
+                placeholder: Video
+        contestant_profile: 
+            attributes:
+                name: contestant_profile
+                id: contestant_profile
+                type: textarea
+                label: Profile
+                placeholder: Profile
+        contestant_signup_complete: 
+            attributes:
+                name: contestant_signup_complete
+                id: contestant_signup_complete
+                type: integer
+                label: Status
+                placeholder: Status
+        contestant_photo:
+            attributes:
+                name: contestant_photo
+                id: contestant_photo
+                type: file
+                label: Profile Image
+                placeholder: Profile Image
+        contestant_country:
+            attributes:
+                name: contestant_country
+                id: contestant_country
+                type: string
+                label: Country
+                placeholder: Country
+        contestant_pole_studio_attending:
+            attributes:
+                name: contestant_pole_studio_attending
+                id: contestant_pole_studio_attending
+                type: string
+                label: Studio
+                placeholder: Studio 
+        contestant_years_pole_dancing:
+            attributes:
+                name: contestant_years_pole_dancing
+                id: contestant_years_pole_dancing
+                type: integer
+                label: How Many Years Have You Been Pole Dancing
+                placeholder: How Many Years Have You Been Pole Dancing        
+        contestant_background_history:
+            attributes:
+                name: contestant_background_history
+                id: contestant_background_history
+                type: textarea
+                label: Background History
+                placeholder: Background History        
+        contestant_instagram:
+            attributes:
+                name: contestant_instagram
+                id: contestant_instagram
+                type: string
+                label: Instagram
+                placeholder: Instagram
+        contestant_facebook:
+            attributes:
+                name: contestant_facebook
+                id: contestant_facebook
+                type: string
+                label: Facebook
+                placeholder: Facebook
+        contestant_twitter:
+            attributes:
+                name: contestant_twitter
+                id: contestant_twitter
+                type: string
+                label: Twitter
+                placeholder: Twitter        
+            
+                
+        
+         
+                
+                

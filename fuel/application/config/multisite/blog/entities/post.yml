@@ -1,0 +1,92 @@
+## YAML Template.
+--- 
+post:
+    attributes:
+        id: post
+        is_entity: true
+        entity_name: post
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: post
+    submit:
+        label: Publish
+        id: publish
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        post id: 
+            attributes:
+                primary_key: true
+                name: post_id
+                id: post_id
+                type: integer
+                placeholder: Post ID
+                disabled: true
+        post title: 
+            attributes:
+                name: post_title
+                id: post_title
+                type: string
+                placeholder: Title
+        post date: 
+            attributes:
+                name: post_date
+                id: post_date
+                type: date
+                placeholder: Post Date        
+        post slug:
+            attributes:
+                name: post_slug
+                id: post_slug
+                type: string
+                placeholder: Post Slug
+        post image:
+            attributes:
+                name: post_image
+                id: post_image
+                type: file
+                label: Post Image
+        post content:
+            attributes:
+                name: post_content
+                id: post_content
+                type: textarea
+                label:
+                placeholder: Content
+        post content undo:
+            attributes:
+                name: post_content_undo
+                id: post_content_undo
+                type: textarea
+                placeholder: Content Undo
+                admin_hide: true
+        post meta seo title:
+            attributes:
+                name: post_meta_seo_title
+                id: post_meta_seo_title
+                type: string
+                placeholder: SEO Title
+        post meta seo keywords:
+            attributes:
+                name: post_meta_seo_keywords
+                id: post_meta_seo_keywords
+                type: string
+                placeholder: SEO Keywords
+        post meta seo description:
+            attributes:
+                name: post_meta_seo_description
+                id: post_meta_seo_description
+                type: textarea
+                placeholder: SEO Description
+        post status:
+            attributes:
+                name: post_status
+                id: post_status
+                type: enumeration
+                enumeration_type: radio
+                Label: Status
+                options: Publish, Draft

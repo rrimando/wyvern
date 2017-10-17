@@ -1,0 +1,44 @@
+## YAML Template
+## Blog Template
+theme: default
+page_title: REIS &raquo; Services
+body_id: home
+login_required: false
+is_admin: false
+data:
+    custom_entity_view:
+        entity: service
+        fields:
+            service name: 
+                attributes:
+                    id: service_name
+                    name: service_name
+                    display: services
+                    label: Service
+            service description: 
+                attributes:
+                    id: service_description
+                    name: service_description
+                    display: services
+                    label: Description         
+            service_file: 
+                attributes:
+                    name: service_file
+                    id: service_file
+                    display: services
+                    label: Service Image
+        filters:        
+page:  
+    css:
+    js:    
+    layout: main
+    header:
+        partials:
+            blog/frontend/header
+    body:
+        partials:
+            blog/frontend/sidebar
+            custom_entity_view
+    footer:
+        partials:
+            blog/frontend/footer:

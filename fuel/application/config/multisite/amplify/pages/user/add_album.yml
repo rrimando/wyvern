@@ -1,0 +1,35 @@
+## YAML Template.
+## Were using the default for LenovoPH
+theme: default
+page_title: Amplify &raquo; Add Album
+body_id: amplify-user
+login_required: false
+data:
+    forms:
+        #no trailing colon
+        add_album_form
+        add_track_form
+footer_js:
+    amplify.js
+page:  
+    css:
+    js:    
+    layout: main
+    
+    header:
+        
+    body:
+        partials:
+            custom/amplify/add_album:
+                partials:
+                    add_album_form:
+                    add_track_form:
+        
+    footer:
+        partials:
+            bare_navigation:
+            copyright:
+                #todo make this dynamic for change of years
+                company: Amplify PH.
+
+

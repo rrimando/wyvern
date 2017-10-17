@@ -1,0 +1,45 @@
+## YAML Template
+## Blog Template
+theme: default
+page_title: REIS &raquo; Projects
+body_id: home
+login_required: false
+is_admin: false
+data:
+    custom_entity_view:
+        entity: project
+        fields:
+            project name: 
+                attributes:
+                    id: project_name
+                    name: project_name
+                    display: projects
+                    label: Project
+            project description: 
+                attributes:
+                    id: project_description
+                    name: project_description
+                    display: projects
+                    label: Description         
+            project_file: 
+                attributes:
+                    name: project_file
+                    id: project_file
+                    display: projects
+                    label: Project Image
+        filters: 
+page_slug: projects            
+page:  
+    css:
+    js:    
+    layout: main
+    header:
+        partials:
+            blog/frontend/header
+    body:
+        partials:
+            blog/frontend/sidebar
+            custom_entity_view
+    footer:
+        partials:
+            blog/frontend/footer:

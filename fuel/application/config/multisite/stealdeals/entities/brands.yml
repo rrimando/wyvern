@@ -1,0 +1,64 @@
+## YAML Template.
+--- 
+brands:
+    attributes:
+        id: brands_entity
+        is_entity: true
+        entity_name: brands
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: brands
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        brands id: 
+            attributes:
+                primary_key: true
+                name: brands_id
+                id: brands_id
+                type: integer
+                placeholder: Brand ID
+                disabled: true
+        brands name:
+            attributes:
+                name: brands_name
+                id: brands_name
+                type: string
+                placeholder: Brand Name
+        brands views:
+            attributes:
+                name: brand_views
+                id: brand_views
+                type: string
+                placeholder: Brand View        
+        brands slug:
+            attributes:
+                name: brands_slug
+                id: brands_slug
+                type: string
+                placeholder: Brand Slug
+        brands category:
+            attributes:
+                name: brands_category
+                id: brands_category
+                type: string
+                placeholder: Brand Category        
+        brands description:
+            attributes:
+                name: brands_description
+                id: brands_description
+                type: textarea
+                placeholder: Brand Description
+        brands url:
+            attributes:
+                name: brands_url
+                id: brands_url
+                type: string
+                placeholder: Brand URL

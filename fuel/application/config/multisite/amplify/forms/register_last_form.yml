@@ -1,0 +1,64 @@
+## YAML Template.
+---
+form:
+    attributes:
+        id: amplify_signup_form
+    ajax:
+        url: ajax/user/register
+        success: user
+    fields:
+        #this is a staple for system stability        
+        artist_genre:
+            attributes:
+                name: artist_genre
+                id: artist_genre
+                type: enumeration
+                label: Genre
+                class:
+                options: Rock, Blues, Raggae, Jazz, Electonic, Pop
+        artist_tags:
+            attributes:
+                name: artist_tags
+                id: artist_tags
+                type: string
+                label:
+                placeholder: Genre Tags
+                footnote: Separate with commas
+        artist_url:
+            attributes:
+                name: artist_url
+                id: artist_url
+                type: string
+                label: '{Your URL}.amplify.ph'
+                placeholder: URL
+                footnote: 
+        registration_step:
+            attributes:
+                type: hidden
+                name: registration_step
+                id: registration_step
+                value: complete
+        next_step:
+            attributes:
+                type: hidden
+                name: next_step
+                id: next_step
+                value: user        
+        entity:
+            attributes:
+                type: hidden
+                name: entity
+                id: entity
+                value: artist
+        csrf_token:
+            attributes:
+                type: csrf
+                name: csrf_token
+        error-container: message
+    submit:
+        label: Sign Up
+        id: next
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up

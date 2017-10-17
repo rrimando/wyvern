@@ -1,0 +1,24 @@
+## YAML Template
+## Blog Template
+theme: default
+page_title: Demo Blog &raquo; Theme Templates
+body_id:
+login_required: true
+is_admin: true
+data:
+page_slug: home    
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        partials:
+    body:
+        partials:
+            link:
+                multiple: true
+                url: /assets/sb-admin/pages/blank.html, /assets/sb-admin/pages/buttons.html, /assets/sb-admin/pages/flot.html, /assets/sb-admin/pages/forms.html, /assets/sb-admin/pages/grid.html, /assets/sb-admin/pages/icons.html, /assets/sb-admin/pages/index.html, /assets/sb-admin/pages/login.html, /assets/sb-admin/pages/morris.html, /assets/sb-admin/pages/notifications.html, /assets/sb-admin/pages/panels-wells.html, /assets/sb-admin/pages/tables.html, /assets/sb-admin/pages/typography.html
+                link_title: Blank, Buttons, FLOT, Forms, Grid, Icons, Index, Login, Morris, Notifications, Panels-wells, Tables, Typography
+            
+    footer:
+        

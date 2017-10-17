@@ -1,0 +1,24 @@
+## YAML Template
+## Blog Template
+theme: default
+page_title: Demo Blog &raquo; Settings
+body_id: admin
+login_required: true
+is_admin: true
+data:
+page_slug: home    
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        partials:
+            blog/admin/header
+    body:
+        partials:
+            blog/admin/sidebar
+            blog/admin/content
+            blog/admin/footer
+    footer:
+        
+        

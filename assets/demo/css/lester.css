@@ -1,0 +1,59 @@
+/* DoctR CSS */
+/* 
+
+    These are THEME specific to the client DoctR - this file is useless without Wyvern
+
+*/
+
+body {
+    background: #00769E url("../images/bg.gif") repeat-x;
+}
+
+body#user_page {
+    background: url(../images/carousel/jogger.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Top Navigation Bar */
+nav .container {
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+/* End Top Navigation Bar */
+
+/* Body */
+.large-logo {
+    margin-top: 20px;
+}
+/* End Body */
+
+/* Login Page */
+
+
+/* Search For A Doctor */
+#search_for_a_doctor {
+    margin-top: 100px;
+    
+    float: right;
+    width: 100%;
+    
+    clear: both;
+    
+    padding: 20px;
+
+    background-color: #222;
+    border-color: #080808;
+}
+
+#search_for_a_doctor label {
+    color: #ffffff;
+    float: left;
+}
+/* End Search For A Doctor */

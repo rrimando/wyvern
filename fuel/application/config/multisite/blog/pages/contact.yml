@@ -1,0 +1,34 @@
+## YAML Template
+## Blog Template
+theme: default
+page_title: Blog &raquo; Contact Us
+body_id: contact-us
+login_required: false
+is_admin: false
+data:
+    forms:
+        contact_form
+page:  
+    css:
+    js:    
+    layout: main
+    header:
+        partials:
+            blog/frontend/header:
+            
+    body:
+        partials:
+            blog/frontend/sidebar:
+            carousel:
+                id: blog-carousel
+                class: carousel-fade
+                caption_class: hidden 
+                data: carousel
+                items:
+            header:
+                text: Contact Us
+            contact_form:
+            
+    footer:
+        partials:
+            blog/frontend/footer:

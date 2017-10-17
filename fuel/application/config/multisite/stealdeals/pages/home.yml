@@ -1,0 +1,30 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: default
+page_title: Stealdeals.com.ph
+page_keywords:
+page_meta:
+page_description:
+body_id: search-page
+data:
+    forms:
+        search_form
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        
+    body:
+        partials:
+            search_form:
+            search_results_container:    
+            
+    footer:
+        partials:
+            clearfix:
+            large_spacer:
+            copyright:
+                #todo make this dynamic for change of years
+                company: Pixeljumpstudios.com.ph
+

@@ -1,0 +1,34 @@
+## YAML Template.
+## Were using the default for LenovoPH
+theme: lenovo
+page_title: Lenovo Cash Back Promo &raquo; Login
+body_id: admin-login
+login_required: false
+data:
+    forms:
+        login_form
+page:  
+    css:
+    js:    
+    layout: _layouts/main
+    
+    header:
+        partials:
+            large_spacer
+            
+    body:
+        partials:
+            
+            large_logo:
+            large_spacer:    
+            login_form:
+        
+    footer:
+        partials:
+            large_spacer:
+            clearfix:
+            copyright:
+                #todo make this dynamic for change of years
+                company: Lenovo.
+
+

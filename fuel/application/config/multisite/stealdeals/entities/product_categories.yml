@@ -1,0 +1,67 @@
+## YAML Template.
+--- 
+product_categories:
+    attributes:
+        id: product_categories_entity
+        is_entity: true
+        entity_name: product_categories
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: product_categories
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        product category id: 
+            attributes:
+                primary_key: true
+                name: product_category_id
+                id: product_category_id
+                type: integer
+                placeholder: Product Category ID
+                disabled: true
+        top category:
+            attributes:
+                name: top_category
+                id: top_category
+                type: enumeration
+                options: True, False
+                placeholder: Top Category
+        product category name:
+            attributes:
+                name: product_category_name
+                id: product_category_name
+                type: string
+                placeholder: Product Category Name
+        product category slug:
+            attributes:
+                name: product_category_slug
+                id: product_category_slug
+                type: string
+                placeholder: Category Slug        
+        product category parent:
+            attributes:
+                name: product_category_parent
+                id: product_category_parent
+                type: number
+                placeholder: Parent
+        product category description:
+            attributes:
+                name: product_category_description
+                id: product_category_description
+                type: textarea
+                placeholder: Category Description
+        product category views:
+            attributes:
+                name: product_category_views
+                id: product_category_views
+                type: number
+                placeholder: Category Views
+                disabled: true
+        

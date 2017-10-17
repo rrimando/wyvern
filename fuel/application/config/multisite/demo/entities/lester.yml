@@ -1,0 +1,35 @@
+## YAML Template.
+--- 
+lester:
+    attributes:
+        id: lester
+        is_entity: true
+        entity_name: lester
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: lester_create
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        lester id: 
+            attributes:
+                primary_key: true
+                name: lester_id
+                id: lester_id
+                type: integer
+                placeholder: Lester ID
+                disabled: true
+        lester value: 
+            attributes:
+                name: lester_value
+                id: lester_value
+                type: string
+                placeholder: Lester Value
+       

@@ -1,0 +1,82 @@
+## YAML Template.
+--- 
+site:
+    attributes:
+        id: site
+        is_entity: true
+        entity_name: site
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: site
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        site id: 
+            attributes:
+                primary_key: true
+                name: site_id
+                id: site_id
+                type: integer
+                placeholder: Site ID
+                disabled: true
+        site name: 
+            attributes:
+                name: site_name
+                id: site_name
+                type: string
+                placeholder: Site Name
+        site address: 
+            attributes:
+                name: site_address
+                id: site_address
+                type: textarea
+                placeholder: Address        
+        site email:
+            attributes:
+                name: site_email
+                id: site_email
+                type: text
+                placeholder: Email
+        site headline:
+            attributes:
+                name: site_headline
+                id: site_headline
+                type: text
+                placeholder: Site Headline 
+        site facebook:
+            attributes:
+                name: site_facebook
+                id: site_facebook
+                type: string
+                placeholder: Facebook URL
+        site google:
+            attributes:
+                name: site_google
+                id: site_google
+                type: string
+                placeholder: Google URL
+        site linkedin:
+            attributes:
+                name: site_linkedin
+                id: site_linkedin
+                type: string
+                placeholder: LinkedIn URL
+        site contact no:
+            attributes:
+                name: site_contact_no
+                id: site_contact_no
+                type: string
+                placeholder: Contact No.
+        site home text:
+            attributes:
+                name: site_home_text
+                id: site_home_text
+                type: textarea
+                placeholder: Home Text

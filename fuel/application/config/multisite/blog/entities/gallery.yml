@@ -1,0 +1,46 @@
+## YAML Template.
+--- 
+gallery:
+    attributes:
+        id: gallery
+        is_entity: true
+        entity_name: gallery
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: gallery
+    submit:
+        label: Save
+        id: Save
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        gallery id: 
+            attributes:
+                primary_key: true
+                name: carouse_id
+                id: carouse_id
+                type: integer
+                placeholder: Gallery Image ID
+                disabled: true
+        gallery caption title: 
+            attributes:
+                name: gallery_caption_title
+                id: gallery_caption_title
+                type: string
+                placeholder: Gallery Caption Title
+        gallery caption:         
+            attributes:
+                name: gallery_caption
+                id: gallery_caption
+                type: textarea
+                placeholder: Gallery Caption
+        gallery file: 
+            attributes:
+                name: gallery_file
+                id: gallery_file
+                type: file
+                placeholder: File 

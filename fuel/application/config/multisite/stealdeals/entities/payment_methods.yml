@@ -1,0 +1,60 @@
+## YAML Template.
+--- 
+payment_methods:
+    attributes:
+        id: payment_methods
+        is_entity: true
+        entity_name: payment_methods
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: payment_methods
+    submit:
+        label: Save
+        id: Save
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        payment method id: 
+            attributes:
+                primary_key: true
+                name: payment_method_id
+                id: payment_method_id
+                type: integer
+                placeholder: Payment Method ID
+                disabled: true
+        payment method type:
+            attributes: 
+                name: payment_method_type
+                id: payment_method_type
+                type: enumeration
+                options: Bank Deposit, Credit Card, Mobile Service, Cash On Delivery
+                placeholder: Type
+                required: true
+        payment method name:        
+            attributes: 
+                name: payment_method_name
+                id: payment_method_name
+                type: string
+                options: 
+                placeholder: Payment Name
+                required: true
+        payment method url:        
+            attributes: 
+                name: payment_method_url
+                id: payment_method_url
+                type: string
+                options: 
+                placeholder: Service URL
+                required: true        
+        payment method description:        
+            attributes: 
+                name: payment_method_description
+                id: payment_method_description
+                type: textarea
+                placeholder: Payment Method Description
+                required: true
+        

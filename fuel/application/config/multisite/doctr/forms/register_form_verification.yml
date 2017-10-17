@@ -1,0 +1,72 @@
+## YAML Template.
+---
+form:
+    attributes:
+        id: login_form
+    ajax:
+        url: ajax/user/register
+    fields:
+        ## field_name: 
+            ## label
+            ## label_id
+            ## label_class
+            ## group_id
+            ## group_class
+            ## name
+            ## type
+            ## placeholder
+            ## required
+            ## email - for validation
+            ## number - for validation
+        verification_clause:
+            attributes:
+                type: content_block
+                id: verification_clause
+                header: Account Verification
+                nullable: true
+                text_content: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        verification_code:
+            attributes:
+                class: full-width
+                type: text
+                nullable: true
+                name: verification_code
+                id: verification_code  
+                placeholder: Input Verification Code
+        verification_submit:
+            attributes:
+                class: full-width
+                type: custom_submit
+                name: verification_submit
+                id: verification_submit
+                label: Verify
+        registration_step:
+            attributes:
+                type: hidden
+                name: registration_step
+                id: registration_step
+                value: verification
+        entity:
+            attributes:
+                type: hidden
+                name: entity
+                id: entity
+                value: patient
+        next_step:
+            attributes:
+                type: hidden
+                name: next_step
+                id: next_step
+                value: register/complete
+        csrf_token:
+            attributes:
+                type: csrf
+                name: csrf_token
+        error-container: message
+    submit:
+        label: Skip
+        id: skip
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up

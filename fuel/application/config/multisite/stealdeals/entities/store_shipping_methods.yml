@@ -1,0 +1,40 @@
+## YAML Template.
+--- 
+store shipping methods:
+    attributes:
+        id: store_shipping_methods_entity
+        is_entity: true
+        entity_name: store_shipping_methods
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: artist
+    submit:
+        label: Create
+        id: create
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        store shipping method id: 
+            attributes:
+                primary_key: true
+                name: store_shipping_method_id
+                id: store_shipping_method_id
+                type: integer
+                placeholder: Store Payment Method ID
+                disabled: true
+        shipping method id:
+            attributes:
+                name: shipping_method_id
+                id: shipping_method_id
+                type: integer
+                placeholder: Method ID
+        store id:
+            attributes:
+                name: store_id
+                id: store_id
+                type: integer
+                placeholder: Store ID

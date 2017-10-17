@@ -1,0 +1,46 @@
+## YAML Template.
+## Were using the default for LenovoPH
+theme: default
+page_title: Amplify &raquo; Home
+body_id: amplify-home
+login_required: false
+data:
+page:  
+    css:
+    js:    
+    layout: main
+    
+    header:
+        
+    body:
+        partials:
+            welcome:
+                welcome_message: ', thanks for joining Amplify.ph!'
+                welcome_source: session
+                welcome_value: artist_band_name
+            text_content:
+                content: Now you can either add a full album or add separate tracks. If you want to skip this just click on the links above.
+            button:
+                base:
+                class: text-center
+                id: add-album 
+                label: Add an Album
+                url: user/add_album
+            block:
+                partials:
+                    button:
+                        base:
+                        class: text-center
+                        id: add-track 
+                        label: Add a Track
+                        url: user/add_track
+        
+        
+    footer:
+        partials:
+            bare_navigation:
+            copyright:
+                #todo make this dynamic for change of years
+                company: Amplify PH.
+
+

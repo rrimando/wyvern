@@ -1,0 +1,72 @@
+## YAML Template.
+---
+form:
+    attributes:
+        id: review
+        is_entity: true
+        entity_name: review
+    ajax:
+        url: ajax/entity/create
+        success: page/review_success
+    fields:
+        ## field_name: 
+            ## label
+            ## label_id
+            ## label_class
+            ## group_id
+            ## group_class
+            ## name
+            ## type
+            ## placeholder
+            ## required
+            ## email - for validation
+            ## number - for validation
+        reviewer first name: 
+            attributes:
+                name: reviewer_first_name
+                id: reviewer_first_name
+                type: string
+                placeholder: First Name
+                required: true
+        reviewer last name: 
+            attributes:
+                name: reviewer_last_name
+                id: reviewer_last_name
+                type: string
+                placeholder: Last Name
+                required: true        
+        reviewer email: 
+            attributes:
+                name: reviewer_email
+                id: reviewer_email
+                type: email
+                placeholder: Email
+                required: true
+        reviewer phone: 
+            attributes:
+                name: reviewer_phone
+                id: reviewer_phone
+                type: number
+                placeholder: Phone        
+        review_content: 
+            attributes:
+                name: review_content
+                id: review_content
+                type: textarea
+                placeholder: Rating / Review
+                required: true
+        # Dont forget the entity
+        entity:
+            attributes:
+                type: hidden
+                name: review
+                id: review
+                value: review            
+        error-container: message
+    submit:
+        label: Send Your Review
+        id: send_review
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up

@@ -1,0 +1,25 @@
+## YAML Template.
+## Were using the default for DocTR
+theme: default
+page_title: DoctR &raquo; Login
+login_required: true
+body_id: 
+data:
+    ## Forms should be the same name
+    forms: 
+        login_form
+page:
+    css:
+    js:    
+    layout: main
+    header:
+        
+    body:
+        partials:
+            login_top_nav
+            clearfix
+            large_logo
+            create_a_new_account
+            login_form
+            forgot_password
+    footer:

@@ -1,0 +1,82 @@
+## YAML Template.
+---
+form:
+    attributes:
+        id: login_form
+    ajax:
+        url: ajax/user/register
+    fields:
+        ## field_name: 
+            ## label
+            ## label_id
+            ## label_class
+            ## group_id
+            ## group_class
+            ## name
+            ## type
+            ## placeholder
+            ## required
+            ## email - for validation
+            ## number - for validation
+        email_address:
+            attributes:
+                name: email_address
+                id: email_address
+                type: text
+                placeholder: Email Address
+                class: email
+                required: true
+        password:
+            attributes:
+                name: password
+                id: password
+                type: password
+                placeholder: Password
+                class:
+                required: true    
+        confirm_password:
+            attributes:
+                name: confirm_password
+                id: confirm_password
+                type: password
+                placeholder: Confirm Password
+                class:
+                required: true    
+        mobile_number:
+            attributes:
+                name: mobile_number
+                id: mobile_number
+                type: number
+                placeholder: Mobile Number
+                required: true
+        phone_number:
+            attributes:
+                name: phone_number
+                id: phone_number
+                type: number
+                placeholder: Phone Number        
+                required: false
+        registration_step:
+            attributes:
+                type: hidden
+                name: registration_step
+                id: registration_step
+                value: create
+        entity:
+            attributes:
+                type: hidden
+                name: entity
+                id: entity
+                value: patient
+        csrf_token:
+            attributes:
+                type: csrf
+                name: csrf_token
+        error-container: message
+    submit:
+        label: Next
+        id: next
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up

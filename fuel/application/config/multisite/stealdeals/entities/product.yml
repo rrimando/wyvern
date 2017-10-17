@@ -1,0 +1,105 @@
+## YAML Template.
+--- 
+product:
+    attributes:
+        id: product
+        is_entity: true
+        entity_name: product
+    ajax:
+        url: ajax/entity/create
+    form:
+        attributes:
+            id: product
+    submit:
+        label: Save
+        id: Save
+        class: full-width,ladda-button
+        span_class: ladda-label
+        data_controls:
+            data-style: slide-up
+    fields:
+        product id: 
+            attributes:
+                primary_key: true
+                name: product_id
+                id: product_id
+                type: integer
+                placeholder: Product ID
+                disabled: true
+        product parent category:
+            attributes:
+                name: product_parent_category
+                id: product_parent_category
+                type: string
+                placeholder: Product Parent Category
+                disabled: true        
+        product categories:
+            attributes:
+                name: product_categories
+                id: product_categories
+                type: string
+                placeholder: Product Category
+                disabled: true
+        product views:
+            attributes: 
+                name: product_views
+                id: product_views
+                type: string
+                placeholder: Views
+                required: true        
+        product name:
+            attributes: 
+                name: product_name
+                id: product_name
+                type: string
+                placeholder: Name
+                required: true
+        product description:        
+            attributes: 
+                name: product_description
+                id: product_description
+                type: textarea
+                options: 
+                placeholder: Product Description
+                required: true
+        product serial:        
+            attributes: 
+                name: product_serial
+                id: product_serial
+                type: string
+                options: 
+                placeholder: Product Serial
+        product price:        
+            attributes: 
+                name: product_price
+                id: product_price
+                type: string
+                options: 
+                placeholder: Product Price(Sugested)        
+        product brand: 
+            attributes: 
+                name: product_brand
+                id: product_brand
+                type: string
+                options: 
+                placeholder: Brand     
+        product manufacturer:        
+            attributes: 
+                name: product_manufacturer
+                id: product_manufacturer
+                type: string
+                placeholder: Manufacturer
+        product tags:        
+            attributes: 
+                name: product_tags
+                id: product_tags
+                type: string
+                placeholder: Tags  
+        product image:        
+            attributes: 
+                name: product_image
+                id: product_image
+                type: file
+                placeholder: Image        
+                
+        
